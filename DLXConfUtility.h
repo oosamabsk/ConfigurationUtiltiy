@@ -15,8 +15,4 @@ public:
     virtual void fSendSSH(const std::wstring& cmd) = 0;
     virtual void fReset() = 0;
     virtual std::vector<std::vector<std::wstring>> fReadCSV(const std::wstring& filename) = 0;
-private:
-    bool connected;
-    KernelAPI * pKernelAPI;
-    std::vector<std::wstring> *args;
 };
