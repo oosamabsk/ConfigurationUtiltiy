@@ -14,5 +14,4 @@ public:
     virtual bool fConnect(const std::wstring& ssid) = 0;
     virtual void fSendSSH(const std::wstring& cmd) = 0;
     virtual void fReset() = 0;
-    virtual std::vector<std::vector<std::wstring>> fReadCSV(const std::wstring& filename) = 0;
 };
